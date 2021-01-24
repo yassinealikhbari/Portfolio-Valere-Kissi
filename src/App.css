@@ -1,0 +1,10 @@
+.App {
+  text-align: center;
+}
+body {
+  background-position: fixed;
+  background-blend-mode: overlay;
+  background-image: url('./assets/images/bg.webp');
+  background-color: rgb(203 203 203);
+  background-size: cover;
+}
