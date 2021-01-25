@@ -5,7 +5,9 @@
     word-spacing:10px;
 
 }
-
+.navbar {
+    display: block;
+}
 .nav-item {
     margin: 0 30px;
 }

@@ -4,9 +4,11 @@ import "./Showreels.css";
 
 const Showreels = () => {
     return (
-        <div>
-        <h3 id="showreel-subtitle">SHOWREEL</h3>
-        <VideoPlayer youtubeId="R7lVdnZofRg"></VideoPlayer>
+        <div class="vk-flex-container">
+            <div class="reel-container">
+                <h3 id="showreel-subtitle">SHOWREEL</h3>
+                <VideoPlayer youtubeId="R7lVdnZofRg"></VideoPlayer>
+            </div>
         </div>
     );
 };

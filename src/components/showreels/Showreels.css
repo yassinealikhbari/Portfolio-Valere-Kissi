@@ -3,3 +3,7 @@
     font-weight: 100;
     letter-spacing: 10px;
 }
+.reel-container{
+    align-items: center;
+    width: 100%;
+}

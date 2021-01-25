@@ -1,6 +1,6 @@
 import React from "react";
 import './Header.css';
-import Menu from '../navbar/Menu'
+import Menu from '../menu/Menu'
 import logo from './../../assets/images/4eyp-logo.png';
 
 const Header = () => {
