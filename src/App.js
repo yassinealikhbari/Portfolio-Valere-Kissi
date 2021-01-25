@@ -18,7 +18,12 @@ function App() {
         <BrowserRouter>
           <Switch>
             <Route path="/" exact component={Showreels} />
-            <Route path="/home">
+            <Route path="/home" exact component={Showreels} />
+            <Route path="/videos" exact component={Videos} />
+            <Route path="/photos" exact component={Photos} />
+            <Route path="/service" exact component={Service} />
+            <Route path="/contact" exact component={Contacts} />
+            {/* <Route path="/home">
               <Showreels />
             </Route>
             <Route path="/videos">
@@ -32,7 +37,7 @@ function App() {
             </Route>
             <Route path="/contacts">
               <Contacts />
-            </Route>
+            </Route> */}
           </Switch>
         </BrowserRouter>
       </div>
