@@ -72,6 +72,9 @@
         text-align: center;
         margin: auto 15px;
     }
+    h3 {
+        padding: 30px;
+    }
 }
 
 @media (max-width: 375px) {
