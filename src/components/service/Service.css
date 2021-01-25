@@ -50,6 +50,11 @@
     -o-transform:scale(1.2); /* Opera */
 }
 
+.service-footer {
+ font-size: 14px;
+ color: #757575;
+ margin: 30px
+}
 
 @media (max-width: 600px) {
     .service-container {

@@ -14,14 +14,14 @@ const Service = () => {
         <div class="service-info">
           <h3>SERVICES</h3>
           <div class="service-list">
-
             {services.map(service => {
               return (<span><p>{service}</p><br /></span>)
             })}
-
           </div>
         </div>
-
+      </div>
+      <div class="service-footer">
+        Contact for rates and more info.
       </div>
     </div>
   );
