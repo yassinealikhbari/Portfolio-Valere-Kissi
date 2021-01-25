@@ -5,7 +5,6 @@ import { Form, Button } from 'react-bootstrap';
 
 const Contacts = () => {
   const userId = process.env.REACT_APP_EMAILJS_USER_ID;
-  const accessToken = process.env.REACT_APP_EMAILJS_ACCESS_TOKEN;
   const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
   const serviceId = process.env.REACT_APP_SERVICE_ID;
 
