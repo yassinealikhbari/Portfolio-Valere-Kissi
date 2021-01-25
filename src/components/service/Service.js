@@ -1,6 +1,6 @@
 import React from "react";
 import './Service.css'
-import me from './../../assets/images/me1.jpeg'
+import me from './../../assets/images/me2.jpeg'
 
 const Service = () => {
   //List of services
