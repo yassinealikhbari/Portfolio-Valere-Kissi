@@ -4,6 +4,7 @@
   flex-direction: column;
   height: 100vh;
 }
+
 body {
   background-position: fixed;
   background-blend-mode: overlay;
@@ -16,13 +17,17 @@ body {
   height: auto;
 }
 
+
 .main {
   flex: auto;
 }
 
 .footer {
-  height: 75px;
+  height: 90px;
   bottom: 0;
+  width: 100%;
+  color: #fff;
+  margin-top: 50px;
 }
 
 .vk-flex-container {
@@ -33,4 +38,9 @@ body {
   justify-content: center;
   height: 100%;
   width: 100%;
+  justify-content: space-evenly;
+}
+
+.bg-blk {
+  background-color: #1b1b1b;
 }
