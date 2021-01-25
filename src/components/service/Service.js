@@ -1,8 +1,28 @@
 import React from "react";
+import './Service.css'
+import me from './../../assets/images/me1.jpeg'
+
 const Service = () => {
+  //List of services
+  var services = ["Director of Photography", "Camera Operator", "Photographer", "Editor - Colorist"];
   return (
     <div>
-      <h1>SERVICE</h1>
+      <div class="service-container">
+        <div class="service-imge">
+          <img src={me}></img>
+        </div>
+        <div class="service-info">
+          <h3>SERVICES</h3>
+          <div class="service-list">
+
+            {services.map(service => {
+              return (<span><p>{service}</p><br /></span>)
+            })}
+
+          </div>
+        </div>
+
+      </div>
     </div>
   );
 };
