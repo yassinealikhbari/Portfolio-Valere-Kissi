@@ -1,10 +1,26 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 body {
   background-position: fixed;
   background-blend-mode: overlay;
-  background-image: url('./assets/images/bg.webp');
+  background-image: url("./assets/images/bg.webp");
   background-color: rgb(203 203 203);
   background-size: cover;
+}
+
+.header {
+  height: auto;
+}
+
+.main {
+  flex: auto;
+}
+
+.footer {
+  height: 75px;
+  bottom: 0;
 }

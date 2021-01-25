@@ -11,30 +11,34 @@ import Footer from './components/footer/Footer';
 function App() {
   return (
     <div className="App">
-      <Header></Header>
-
-      <BrowserRouter>
-        <Switch>
-        <Route path="/" exact component={Showreels} />
-          <Route path="/home">
-            <Showreels />
-          </Route>
-          <Route path="/videos">
-            <Videos />
-          </Route>
-          <Route path="/photos">
-            <Photos />
-          </Route>
-          <Route path="/service">
-            <Service />
-          </Route>
-          <Route path="/contacts">
-            <Contacts />
-          </Route>
-        </Switch>
-      </BrowserRouter>
-
-      <Footer></Footer>
+      <div class="header">
+        <Header></Header>
+      </div>
+      <div class="main">
+        <BrowserRouter>
+          <Switch>
+            <Route path="/" exact component={Showreels} />
+            <Route path="/home">
+              <Showreels />
+            </Route>
+            <Route path="/videos">
+              <Videos />
+            </Route>
+            <Route path="/photos">
+              <Photos />
+            </Route>
+            <Route path="/service">
+              <Service />
+            </Route>
+            <Route path="/contacts">
+              <Contacts />
+            </Route>
+          </Switch>
+        </BrowserRouter>
+      </div>
+      <div class="footer">
+        <Footer></Footer>
+      </div>
     </div>
   );
 }
