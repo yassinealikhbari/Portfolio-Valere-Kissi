@@ -15,6 +15,7 @@ function App() {
 
       <BrowserRouter>
         <Switch>
+        <Route path="/" exact component={Showreels} />
           <Route path="/home">
             <Showreels />
           </Route>
