@@ -9,7 +9,7 @@ body {
   background-position: fixed;
   background-blend-mode: overlay;
   background-image: url("./assets/images/bg.webp");
-  background-color: rgb(203 203 203);
+  background-color: rgb(243 243 243);
   background-size: cover;
   background-attachment: fixed;
 }
