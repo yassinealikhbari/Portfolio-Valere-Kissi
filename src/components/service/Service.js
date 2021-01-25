@@ -1,6 +1,6 @@
 import React from "react";
 import './Service.css'
-import me from './../../assets/images/me2.jpeg'
+import valere from './../../assets/images/me2.jpeg'
 
 const Service = () => {
   //List of services
@@ -9,7 +9,7 @@ const Service = () => {
     <div>
       <div class="service-container">
         <div class="service-imge">
-          <img src={me}></img>
+          <img src={valere}></img>
         </div>
         <div class="service-info">
           <h3>SERVICES</h3>
