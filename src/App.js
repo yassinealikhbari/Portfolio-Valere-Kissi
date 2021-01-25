@@ -23,21 +23,6 @@ function App() {
             <Route path="/photos" exact component={Photos} />
             <Route path="/service" exact component={Service} />
             <Route path="/contact" exact component={Contacts} />
-            {/* <Route path="/home">
-              <Showreels />
-            </Route>
-            <Route path="/videos">
-              <Videos />
-            </Route>
-            <Route path="/photos">
-              <Photos />
-            </Route>
-            <Route path="/service">
-              <Service />
-            </Route>
-            <Route path="/contacts">
-              <Contacts />
-            </Route> */}
           </Switch>
         </BrowserRouter>
       </div>
