@@ -9,11 +9,12 @@ const Menu = () => {
     const handleClick = (selected) => {
         setActiveKey(selected);
     }
-    useComponentDidMount(() => {
+
+    useEffect(() => {
         const firstPath = window.location.pathname.split('/')[1];
-        if (firstPath != null && firstPath != "")
+        if (firstPath !== null && firstPath !== "")
             setActiveKey(firstPath);
-    });
+    }, []);
 
     return (
         <div>
@@ -40,12 +41,6 @@ const Menu = () => {
             </Navbar>
         </div>
     );
-};
-
-export const useComponentDidMount = handler => {
-    return useEffect(() => {
-        return handler();
-    }, []);
 };
 
 export default Menu;
