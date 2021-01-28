@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Menu.css';
 import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
@@ -9,6 +9,11 @@ const Menu = () => {
     const handleClick = (selected) => {
         setActiveKey(selected);
     }
+    useComponentDidMount(() => {
+        const firstPath = window.location.pathname.split('/')[1];
+        if (firstPath != null && firstPath != "")
+            setActiveKey(firstPath);
+    });
 
     return (
         <div>
@@ -35,6 +40,12 @@ const Menu = () => {
             </Navbar>
         </div>
     );
+};
+
+export const useComponentDidMount = handler => {
+    return useEffect(() => {
+        return handler();
+    }, []);
 };
 
 export default Menu;
