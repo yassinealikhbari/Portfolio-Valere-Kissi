@@ -18,13 +18,13 @@ function App() {
         </div>
         <div class="main">
           <Switch>
-            <Route exact path="/" exact component={Showreels} />
-            <Route exact path="/home" exact component={Showreels} />
-            <Route exact path="/videos" exact component={Videos} />
-            <Route exact path="/photos" exact component={Photos} />
-            <Route exact path="/service" exact component={Service} />
-            <Route exact path="/contact" exact component={Contacts} />
-            <Route exact path="/404" exact component={NotFound} />
+            <Route exact path="/" component={Showreels} />
+            <Route exact path="/home" component={Showreels} />
+            <Route exact path="/videos" component={Videos} />
+            <Route exact path="/photos" component={Photos} />
+            <Route exact path="/service" component={Service} />
+            <Route exact path="/contact" component={Contacts} />
+            <Route exact path="/404" component={NotFound} />
             <Route exact component={NotFound} />
           </Switch>
         </div>
