@@ -14,3 +14,13 @@
 .nav-item {
     margin: 0 30px;
 }
+
+.active {
+    color: #303030;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #1b1b1b;
+}

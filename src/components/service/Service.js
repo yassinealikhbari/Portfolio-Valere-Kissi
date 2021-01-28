@@ -15,7 +15,7 @@ const Service = () => {
           <h3>SERVICES</h3>
           <div class="service-list">
             {services.map(service => {
-              return (<span><p>{service}</p><br /></span>)
+              return (<span key={service}><p>{service}</p><br /></span>)
             })}
           </div>
         </div>
