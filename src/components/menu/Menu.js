@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 
 const Menu = () => {
     const [activeKey, setActiveKey] = useState("home");
-    const [ignored, forceUpdate] = useReducer(x => x + 1, 0);
 
     const handleClick = (selected) => {
         setActiveKey(selected);
