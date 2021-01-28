@@ -45,3 +45,13 @@ body {
 .bg-blk {
   background-color: #1b1b1b;
 }
+
+.txt-center {
+  text-align: center;
+}
+.txt-left {
+  text-align: left;
+}
+.txt-right {
+  text-align: right;
+}

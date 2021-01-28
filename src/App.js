@@ -7,6 +7,7 @@ import Photos from './components/photos/Photos';
 import Service from './components/service/Service';
 import Contacts from './components/contacts/Contacts';
 import Footer from './components/footer/Footer';
+import NotFound from './components/notfound/NotFound';
 
 function App() {
   return (
@@ -17,12 +18,14 @@ function App() {
         </div>
         <div class="main">
           <Switch>
-            <Route path="/" exact component={Showreels} />
-            <Route path="/home" exact component={Showreels} />
-            <Route path="/videos" exact component={Videos} />
-            <Route path="/photos" exact component={Photos} />
-            <Route path="/service" exact component={Service} />
-            <Route path="/contact" exact component={Contacts} />
+            <Route exact path="/" exact component={Showreels} />
+            <Route exact path="/home" exact component={Showreels} />
+            <Route exact path="/videos" exact component={Videos} />
+            <Route exact path="/photos" exact component={Photos} />
+            <Route exact path="/service" exact component={Service} />
+            <Route exact path="/contact" exact component={Contacts} />
+            <Route exact path="/404" exact component={NotFound} />
+            <Route exact component={NotFound} />
           </Switch>
         </div>
       </BrowserRouter>

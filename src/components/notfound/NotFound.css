@@ -1,0 +1,14 @@
+.notfound-container img {
+   max-width: 500px;
+}
+
+.notfound-container a {
+    text-decoration: underline;
+    color: rgb(28, 26, 37);
+}
+
+@media (max-width: 480px) {
+    .notfound-container img {
+        max-width: 280px;
+     }
+}
