@@ -81,9 +81,7 @@ export class Service extends Component<IServiceProps, IServiceState> {
             </div>
           </div>
         </div>
-        <div className="service-footer">
-          Contact for rates and more info.
-        </div>
+
         <div className="service-container equipment">
           <div>
             <Gallery photos={Photos} onClick={this.openLightbox} />
@@ -96,6 +94,10 @@ export class Service extends Component<IServiceProps, IServiceState> {
               prevSrc={Photos[this.state.currentImage].src}
             />}
           </div>
+        </div>
+        
+        <div className="service-footer">
+          Contact for rates and more info.
         </div>
       </div >
     );

@@ -5,7 +5,7 @@ import Showreels from './components/showreels/Showreels';
 import Videos from './components/videos/Videos';
 import Photos from './components/photos/Photos';
 import {Service} from './components/service/Service';
-import Contacts from './components/contacts/Contacts';
+import {Contacts} from './components/contacts/Contacts';
 import Footer from './components/footer/Footer';
 import NotFound from './components/notfound/NotFound';
 
