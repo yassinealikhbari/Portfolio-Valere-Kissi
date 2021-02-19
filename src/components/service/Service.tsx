@@ -54,13 +54,13 @@ export class Service extends Component<IServiceProps, IServiceState> {
 
   gotoPrevious = () => {
     this.setState({
-      currentImage: this.state.currentImage == 0 ? this.state.currentImage - 1 : 3
+      currentImage: this.state.currentImage === 0 ? this.state.currentImage - 1 : 3
     }, this.forceUpdate);
   }
 
   gotoNext = () => {
     this.setState({
-      currentImage: this.state.currentImage == 3 ? 0 : this.state.currentImage + 1
+      currentImage: this.state.currentImage === 3 ? 0 : this.state.currentImage + 1
     }, this.forceUpdate);
   }
 
