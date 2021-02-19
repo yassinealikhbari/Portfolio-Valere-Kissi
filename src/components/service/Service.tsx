@@ -1,10 +1,13 @@
 import React, { Component } from "react";
 import './Service.css';
 import Gallery from "react-photo-gallery";
-// import Carousel, { Modal, ModalGateway } from "react-images";
+import Valere from "./../../assets/images/services/IMG_4433.jpg"
+import { Photos } from "./equipment";
+import Lightbox from 'react-image-lightbox';
+// import Lightbox from '@boomfly/react-lightbox-component';
+import 'react-image-lightbox/style.css';
 
 export interface IServiceProps {
-
 }
 
 export interface IServiceState {
@@ -14,27 +17,7 @@ export interface IServiceState {
 
 export class Service extends Component<IServiceProps, IServiceState> {
   private services: string[] = ["Director of Photography", "Camera Operator", "Photographer", "Editor - Colorist"];
-  private photos: any[] =
-    [{
-      src: "./../../assets/images/services/IMG_4468.jpg",
-      width: 4,
-      height: 3,
-    },
-    {
-      src: "./../../assets/images/services/IMG_4470.jpg",
-      width: 4,
-      height: 3,
-    },
-    {
-      src: "../../assets/images/services/IMG_4471.jpg",
-      width: 4,
-      height: 3
-    },
-    {
-      src: "../../assets/images/services/IMG_4472.jpg",
-      width: 4,
-      height: 3
-    }];
+
   constructor(props: IServiceProps) {
     super(props);
 
@@ -56,7 +39,6 @@ export class Service extends Component<IServiceProps, IServiceState> {
 
 
   openLightbox = (event: any, obj: any) => {
-    console.log("open");
     this.setState({
       currentImage: obj.index,
       lightboxIsOpen: true
@@ -72,22 +54,23 @@ export class Service extends Component<IServiceProps, IServiceState> {
 
   gotoPrevious = () => {
     this.setState({
-      currentImage: this.state.currentImage - 1
-    });
+      currentImage: this.state.currentImage == 0 ? this.state.currentImage - 1 : 3
+    }, this.forceUpdate);
   }
 
   gotoNext = () => {
     this.setState({
-      currentImage: this.state.currentImage + 1
-    });
+      currentImage: this.state.currentImage == 3 ? 0 : this.state.currentImage + 1
+    }, this.forceUpdate);
   }
 
   public render(): React.ReactElement<IServiceProps> {
+    console.log("Valere", Valere);
     return (
       <div>
         <div className="service-container">
           <div className="service-imge">
-            <img src={'./../../assets/images/services/IMG_4433.jpg'} alt="Valere Kissi"></img>
+            <img src={Valere} alt="Valere Kissi"></img>
           </div>
           <div className="service-info">
             <h3>SERVICES</h3>
@@ -101,23 +84,17 @@ export class Service extends Component<IServiceProps, IServiceState> {
         <div className="service-footer">
           Contact for rates and more info.
         </div>
-        <div className="service-container">
+        <div className="service-container equipment">
           <div>
-            <Gallery photos={this.photos} onClick={this.openLightbox} />
-            {/* <ModalGateway>
-              {viewerIsOpen ? (
-                <Modal onClose={closeLightbox}>
-                  <Carousel
-                    currentIndex={currentImage}
-                    views={photos.map(x => ({
-                      ...x,
-                      srcset: x.srcSet,
-                      caption: x.title
-                    }))}
-                  />
-                </Modal>
-              ) : null}
-            </ModalGateway> */}
+            <Gallery photos={Photos} onClick={this.openLightbox} />
+            {this.state.lightboxIsOpen && <Lightbox
+              onCloseRequest={this.closeLightbox}
+              onMovePrevRequest={this.gotoPrevious}
+              onMoveNextRequest={this.gotoNext}
+              mainSrc={Photos[this.state.currentImage].src}
+              nextSrc={Photos[this.state.currentImage].src}
+              prevSrc={Photos[this.state.currentImage].src}
+            />}
           </div>
         </div>
       </div >
