@@ -4,7 +4,6 @@ import Gallery from "react-photo-gallery";
 import Valere from "./../../assets/images/services/IMG_4433.jpg"
 import { Photos } from "./equipment";
 import Lightbox from 'react-image-lightbox';
-// import Lightbox from '@boomfly/react-lightbox-component';
 import 'react-image-lightbox/style.css';
 
 export interface IServiceProps {
