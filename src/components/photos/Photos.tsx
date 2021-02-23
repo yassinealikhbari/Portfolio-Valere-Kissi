@@ -1,10 +1,20 @@
 import React from "react";
-const Photos = () => {
-  return (
-    <div>
-      <h1>PHOTOS</h1>
-    </div>
-  );
-};
 
-export default Photos;
+export interface IPhotosProps { }
+
+export interface IPhotosState { }
+
+export class Photos extends React.Component<IPhotosProps, IPhotosState> {
+  constructor(props: IPhotosProps) {
+    super(props);
+    this.state = {};
+  }
+
+  public render() {
+    return (
+      <div>
+        <h1>PHOTOS</h1>
+      </div>
+    );
+  };
+}

@@ -1,13 +1,13 @@
 import './App.css';
-import Header from './components/header/Header';
+import { Header } from './components/header/Header';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Showreels from './components/showreels/Showreels';
-import Videos from './components/videos/Videos';
-import Photos from './components/photos/Photos';
-import {Service} from './components/service/Service';
-import {Contacts} from './components/contacts/Contacts';
-import Footer from './components/footer/Footer';
-import NotFound from './components/notfound/NotFound';
+import { Showreels } from './components/showreels/Showreels';
+import { Videos } from './components/videos/Videos';
+import { Photos } from './components/photos/Photos';
+import { Service } from './components/service/Service';
+import { Contacts } from './components/contacts/Contacts';
+import { Footer } from './components/footer/Footer';
+import { NotFound } from './components/notfound/NotFound';
 
 function App() {
   return (
