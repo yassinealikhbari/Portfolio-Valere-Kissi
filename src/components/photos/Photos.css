@@ -1,7 +1,7 @@
 .photos-container {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     align-content: baseline;
     height: 100%;
@@ -38,9 +38,7 @@
 }
 
 @media (min-width: 600px) {
-    .photos-container img {
-        height: 360px;
-        width: auto;
+    .photos-container {
+        width: 80%;
     }
-    
 }
