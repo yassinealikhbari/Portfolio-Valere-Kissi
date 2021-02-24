@@ -45,27 +45,37 @@ export class Photos extends React.Component<IPhotosProps, IPhotosState> {
     );
   };
 
-  openLightbox = (event: any, obj: any) => {
+  /**
+   * componentDidMount
+   */
+  public componentDidMount() {
+    Pics.map(photo => {
+      photo.loading = "lazy";
+      return photo;
+    });
+  }
+
+  private openLightbox = (event: any, obj: any) => {
     this.setState({
       currentImage: obj.index,
       lightboxIsOpen: true
     });
   }
 
-  closeLightbox = () => {
+  private closeLightbox = () => {
     this.setState({
       currentImage: 0,
       lightboxIsOpen: false
     });
   }
 
-  gotoPrevious = () => {
+  private gotoPrevious = () => {
     this.setState({
       currentImage: this.state.currentImage === 0 ? 45 : this.state.currentImage - 1
     }, this.forceUpdate);
   }
 
-  gotoNext = () => {
+  private gotoNext = () => {
     this.setState({
       currentImage: this.state.currentImage === 45 ? 0 : this.state.currentImage + 1
     }, this.forceUpdate);

@@ -36,22 +36,3 @@
 .react-photo-gallery--gallery > div {
     justify-content: center;
 }
-
-@media (max-width: 600px) {
-    .photos-container {
-        flex-direction: column;
-        margin: 0;
-        width: 100%;
-    }
-    .photos-container {
-        text-align: center;
-        margin: 30px 15px;
-    }
-}
-
-@media (max-width: 375px) {
-    .photos-container img {
-        height: 320px;
-        width: auto;
-    }
-}
