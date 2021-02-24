@@ -29,7 +29,6 @@ export class Photos extends React.Component<IPhotosProps, IPhotosState> {
   public render() {
     return (
       <div>
-        <h3 id="photos-subtitle">Photos</h3>
         <div className="photos-container">
           <Gallery photos={Thumbnails} onClick={this.openLightbox} />
           {this.state.lightboxIsOpen && <Lightbox
