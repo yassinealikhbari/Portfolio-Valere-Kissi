@@ -22,7 +22,7 @@
 }
 
 #yt-link:hover {
-    background: #ff0000;
+    background: linear-gradient(180deg, #ffffff, 50%, #dc3545);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

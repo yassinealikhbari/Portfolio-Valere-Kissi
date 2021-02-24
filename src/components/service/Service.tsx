@@ -15,7 +15,7 @@ export interface IServiceState {
 }
 
 export class Service extends Component<IServiceProps, IServiceState> {
-  private services: string[] = ["Director of Photography", "Camera Operator", "Photographer", "Editor - Colorist"];
+  private services: string[] = ["Director of Photography", "Camera Operator", "Photographer", "Editor & Colorist"];
 
   constructor(props: IServiceProps) {
     super(props);
