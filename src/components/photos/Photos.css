@@ -11,7 +11,7 @@
     color: #303030 !important;
 }
 .photos-container img {
-    height: 360px;
+    /* height: 360px; */
     width: auto;
     transition: transform 0.5s;
 }
@@ -36,3 +36,18 @@
 .react-photo-gallery--gallery > div {
     justify-content: center;
 }
+
+@media (min-width: 600px) {
+    .photos-container img {
+        height: 360px;
+        width: auto;
+    }
+    
+}
+/* 
+@media (max-width: 375px) {
+    .service-imge img {
+        height: 320px;
+        width: auto;
+    }
+} */

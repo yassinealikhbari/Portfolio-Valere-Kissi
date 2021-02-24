@@ -41,7 +41,7 @@ export class Photos extends React.Component<IPhotosProps, IPhotosState> {
             prevSrc={Pics[this.state.currentImage].src}
           />}
         </div>
-      </div>
+      </div> 
     );
   };
 
