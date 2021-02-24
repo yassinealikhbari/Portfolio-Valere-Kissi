@@ -61,13 +61,13 @@ export class Photos extends React.Component<IPhotosProps, IPhotosState> {
 
   gotoPrevious = () => {
     this.setState({
-      currentImage: this.state.currentImage === 0 ? this.state.currentImage - 1 : 3
+      currentImage: this.state.currentImage === 0 ? 45 : this.state.currentImage - 1
     }, this.forceUpdate);
   }
 
   gotoNext = () => {
     this.setState({
-      currentImage: this.state.currentImage === 3 ? 0 : this.state.currentImage + 1
+      currentImage: this.state.currentImage === 45 ? 0 : this.state.currentImage + 1
     }, this.forceUpdate);
   }
 }
