@@ -93,231 +93,271 @@ import thumb45 from './../../assets/images/works/thumbnails/45.jpg';
 export const Pics: any[] =
     [{
         src: pic1,
+        key: pic1,
         width: 4,
         height: 5
     },
     {
         src: pic2,
+        key: pic2,
         width: 4,
         height: 5
     },
     {
         src: pic3,
+        key: pic3,
         width: 4,
         height: 5
     },
     {
         src: pic4,
+        key: pic4,
         width: 4,
         height: 5
     },
     {
         src: pic5,
+        key: pic5,
         width: 4,
         height: 5
     },
     {
         src: pic6,
+        key: pic6,
         width: 4,
         height: 5
     },
     {
         src: pic7,
+        key: pic7,
         width: 4,
         height: 5
     },
     {
         src: pic8,
+        key: pic8,
         width: 4,
         height: 5
     },
     {
         src: pic9,
+        key: pic9,
         width: 4,
         height: 5
     },
     {
         src: pic10,
+        key: pic10,
         width: 4,
         height: 5
     },
     {
         src: pic11,
+        key: pic11,
         width: 4,
         height: 5
     },
     {
         src: pic12,
+        key: pic12,
         width: 4,
         height: 5
     },
     {
         src: pic13,
+        key: pic13,
         width: 4,
         height: 5
     },
     {
         src: pic14,
+        key: pic14,
         width: 4,
         height: 5
     },
     {
         src: pic15,
+        key: pic15,
         width: 4,
         height: 5
     },
     {
         src: pic16,
+        key: pic16,
         width: 4,
         height: 5
     },
     {
         src: pic17,
+        key: pic17,
         width: 4,
         height: 5
     },
     {
         src: pic18,
+        key: pic18,
         width: 4,
         height: 5
     },
     {
         src: pic19,
+        key: pic19,
         width: 4,
         height: 5
     },
     {
         src: pic20,
+        key: pic20,
         width: 4,
         height: 5
     },
     {
         src: pic21,
+        key: pic21,
         width: 4,
         height: 5
     },
     {
         src: pic22,
+        key: pic22,
         width: 4,
         height: 5
     },
     {
         src: pic23,
+        key: pic22,
         width: 4,
         height: 5
     },
     {
         src: pic24,
+        key: pic24,
         width: 4,
         height: 5
     },
     {
         src: pic25,
+        key: pic25,
         width: 4,
         height: 5
     },
     {
         src: pic26,
+        key: pic26,
         width: 4,
         height: 5
     },
     {
         src: pic27,
+        key: pic27,
         width: 4,
         height: 5
     },
     {
         src: pic28,
+        key: pic28,
         width: 4,
         height: 5
     },
     {
         src: pic29,
+        key: pic29,
         width: 4,
         height: 5
     },
     {
         src: pic30,
+        key: pic30,
         width: 4,
         height: 5
     },
     {
         src: pic31,
+        key: pic31,
         width: 4,
         height: 5
     },
     {
         src: pic32,
+        key: pic32,
         width: 4,
         height: 5
     },
     {
         src: pic33,
-        width: 4,
-        height: 5
-    },
-    {
-        src: pic33,
+        key: pic33,
         width: 4,
         height: 5
     },
     {
         src: pic34,
+        key: pic34,
         width: 4,
         height: 5
     },
     {
         src: pic35,
+        key: pic35,
         width: 4,
         height: 5
     },
     {
         src: pic36,
+        key: pic36,
         width: 4,
         height: 5
     },
     {
         src: pic37,
+        key: pic37,
         width: 4,
         height: 5
     },
     {
         src: pic38,
+        key: pic38,
         width: 4,
         height: 5
     },
     {
         src: pic39,
+        key: pic34,
         width: 4,
         height: 5
     },
     {
         src: pic40,
+        key: pic40,
         width: 4,
         height: 5
     },
     {
         src: pic41,
+        key: pic41,
         width: 4,
         height: 5
     },
     {
         src: pic42,
+        key: pic42,
         width: 4,
         height: 5
     },
     {
         src: pic43,
+        key: pic43,
         width: 4,
         height: 5
     },
     {
         src: pic44,
+        key: pic44,
         width: 4,
         height: 5
     },
     {
         src: pic45,
+        key: pic45,
         width: 4,
         height: 5
 }];
@@ -326,231 +366,271 @@ export const Pics: any[] =
 export const Thumbnails: any[] =
     [{
         src: thumb1,
+        key: thumb1,
         width: 4,
         height: 5
     },
     {
         src: thumb2,
+        key: thumb2,
         width: 4,
         height: 5
     },
     {
         src: thumb3,
+        key: thumb3,
         width: 4,
         height: 5
     },
     {
         src: thumb4,
+        key: thumb4,
         width: 4,
         height: 5
     },
     {
         src: thumb5,
+        key: thumb5,
         width: 4,
         height: 5
     },
     {
         src: thumb6,
+        key: thumb6,
         width: 4,
         height: 5
     },
     {
         src: thumb7,
+        key: thumb7,
         width: 4,
         height: 5
     },
     {
         src: thumb8,
+        key: thumb8,
         width: 4,
         height: 5
     },
     {
         src: thumb9,
+        key: thumb9,
         width: 4,
         height: 5
     },
     {
         src: thumb10,
+        key: thumb10,
         width: 4,
         height: 5
     },
     {
         src: thumb11,
+        key: thumb11,
         width: 4,
         height: 5
     },
     {
         src: thumb12,
+        key: thumb12,
         width: 4,
         height: 5
     },
     {
         src: thumb13,
+        key: thumb13,
         width: 4,
         height: 5
     },
     {
         src: thumb14,
+        key: thumb14,
         width: 4,
         height: 5
     },
     {
         src: thumb15,
+        key: thumb15,
         width: 4,
         height: 5
     },
     {
         src: thumb16,
+        key: thumb16,
         width: 4,
         height: 5
     },
     {
         src: thumb17,
+        key: thumb17,
         width: 4,
         height: 5
     },
     {
         src: thumb18,
+        key: thumb18,
         width: 4,
         height: 5
     },
     {
         src: thumb19,
+        key: thumb19,
         width: 4,
         height: 5
     },
     {
         src: thumb20,
+        key: thumb20,
         width: 4,
         height: 5
     },
     {
         src: thumb21,
+        key: thumb21,
         width: 4,
         height: 5
     },
     {
         src: thumb22,
+        key: thumb22,
         width: 4,
         height: 5
     },
     {
         src: thumb23,
+        key: thumb23,
         width: 4,
         height: 5
     },
     {
         src: thumb24,
+        key: thumb24,
         width: 4,
         height: 5
     },
     {
         src: thumb25,
+        key: thumb25,
         width: 4,
         height: 5
     },
     {
         src: thumb26,
+        key: thumb26,
         width: 4,
         height: 5
     },
     {
         src: thumb27,
+        key: thumb27,
         width: 4,
         height: 5
     },
     {
         src: thumb28,
+        key: thumb28,
         width: 4,
         height: 5
     },
     {
         src: thumb29,
+        key: thumb29,
         width: 4,
         height: 5
     },
     {
         src: thumb30,
+        key: thumb30,
         width: 4,
         height: 5
     },
     {
         src: thumb31,
+        key: thumb31,
         width: 4,
         height: 5
     },
     {
         src: thumb32,
+        key: thumb32,
         width: 4,
         height: 5
     },
     {
         src: thumb33,
-        width: 4,
-        height: 5
-    },
-    {
-        src: thumb33,
+        key: thumb33,
         width: 4,
         height: 5
     },
     {
         src: thumb34,
+        key: thumb34,
         width: 4,
         height: 5
     },
     {
         src: thumb35,
+        key: thumb35,
         width: 4,
         height: 5
     },
     {
         src: thumb36,
+        key: thumb36,
         width: 4,
         height: 5
     },
     {
         src: thumb37,
+        key: thumb37,
         width: 4,
         height: 5
     },
     {
         src: thumb38,
+        key: thumb38,
         width: 4,
         height: 5
     },
     {
         src: thumb39,
+        key: thumb39,
         width: 4,
         height: 5
     },
     {
         src: thumb40,
+        key: thumb40,
         width: 4,
         height: 5
     },
     {
         src: thumb41,
+        key: thumb41,
         width: 4,
         height: 5
     },
     {
         src: thumb42,
+        key: thumb42,
         width: 4,
         height: 5
     },
     {
         src: thumb43,
+        key: thumb43,
         width: 4,
         height: 5
     },
     {
         src: thumb44,
+        key: thumb44,
         width: 4,
         height: 5
     },
     {
         src: thumb45,
+        key: thumb45,
         width: 4,
         height: 5
 }];
