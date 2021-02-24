@@ -41,8 +41,8 @@ export class Contacts extends React.Component<IContactsProps, IContactsState> {
 
         <Snackbar open={this.state.openError} autoHideDuration={20000} onClose={this.handleCloseError}>
           <MuiAlert onClose={this.handleCloseError} severity="error">
-            Error while trying to send this message, please try later or contact me here: <a style={{color: 'rgb(97, 26, 21)'}} href = "mailto:valerekissi69@gmail.com">valerekissi69@gmail.com</a>
-            </MuiAlert>
+            Error while trying to send this message, please try later or contact me here: <a style={{ color: 'rgb(97, 26, 21)' }} href="mailto:valerekissi69@gmail.com">valerekissi69@gmail.com</a>
+          </MuiAlert>
         </Snackbar>
 
         <div id="contact-inner-container">
@@ -71,7 +71,7 @@ export class Contacts extends React.Component<IContactsProps, IContactsState> {
       </div>
     );
   };
-  
+
 
   private sendEmail = (e: any) => {
     e.preventDefault();
@@ -98,9 +98,7 @@ export class Contacts extends React.Component<IContactsProps, IContactsState> {
     if (event === 'clickaway') {
       return;
     }
-
     this.setState({ openSuccess: false });
-
   };
 
   private handleCloseError = (event: any) => {
@@ -110,14 +108,4 @@ export class Contacts extends React.Component<IContactsProps, IContactsState> {
     }
     this.setState({ openError: false });
   };
-
-
-  // let useStyles = makeStyles((theme) => ({
-  //   root: {
-  //     width: '100%',
-  //     '& > * + *': {
-  //       marginTop: theme.spacing(2),
-  //     },
-  //   },
-  // }));
 }
