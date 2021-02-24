@@ -1,7 +1,7 @@
 import React from "react";
 import Gallery from "react-photo-gallery";
 import Lightbox from 'react-image-lightbox';
-import { Pics } from "./works";
+import { Pics, Thumbnails } from "./works";
 import 'react-image-lightbox/style.css';
 import './Photos.css';
 
@@ -31,7 +31,7 @@ export class Photos extends React.Component<IPhotosProps, IPhotosState> {
       <div>
         <h3 id="photos-subtitle">Photos</h3>
         <div className="photos-container">
-          <Gallery photos={Pics} onClick={this.openLightbox} />
+          <Gallery photos={Thumbnails} onClick={this.openLightbox} />
           {this.state.lightboxIsOpen && <Lightbox
             onCloseRequest={this.closeLightbox}
             onMovePrevRequest={this.gotoPrevious}
@@ -49,7 +49,7 @@ export class Photos extends React.Component<IPhotosProps, IPhotosState> {
    * componentDidMount
    */
   public componentDidMount() {
-    Pics.map(photo => {
+    Thumbnails.map(photo => {
       photo.loading = "lazy";
       return photo;
     });
