@@ -13,15 +13,15 @@
 .photos-container img {
     height: 360px;
     width: auto;
-    transition: transform 1s;
+    transition: transform 0.5s;
 }
 
 .photos-container img:hover {
     transform:scale(1.07);
-    -ms-transform:scale(1.1); /* IE 9 */
-    -moz-transform:scale(1.1); /* Firefox */
-    -webkit-transform:scale(1.1); /* Safari and Chrome */
-    -o-transform:scale(1.1S); /* Opera */
+    -ms-transform:scale(1.07); /* IE 9 */
+    -moz-transform:scale(1.07); /* Firefox */
+    -webkit-transform:scale(1.07); /* Safari and Chrome */
+    -o-transform:scale(1.07S); /* Opera */
 }
 
 #photos-subtitle {
