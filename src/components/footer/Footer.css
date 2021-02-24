@@ -8,7 +8,7 @@
     position: relative;
 }
 
-a {
+#vk-footer > a {
     color: #fff;
     background: none;
     -webkit-text-fill-color: #fff;
@@ -40,11 +40,6 @@ a {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-#vk-footer > a {
-    text-decoration: none;
-    color: #fff;
 }
 
 .copy-container {
