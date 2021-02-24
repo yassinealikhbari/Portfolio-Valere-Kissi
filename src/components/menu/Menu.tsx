@@ -1,6 +1,6 @@
 import React from 'react';
 import './Menu.css';
-import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 export interface IMenuProps {
@@ -47,7 +47,7 @@ export class Menu extends React.Component<IMenuProps, IMenuState> {
                             <Nav.Item>
                                 <Nav.Link className={(activeKey === "service") ? "active" : ""} onClick={() => handleClick("service")} as={Link} to="service">Service</Nav.Link>
                             </Nav.Item>
-                            
+
                             <Nav.Item >
                                 <Nav.Link className={(activeKey === "contact") ? "active" : ""} onClick={() => handleClick("contact")} as={Link} to="contact">Contact</Nav.Link>
                             </Nav.Item>
