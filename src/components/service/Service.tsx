@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import './Service.css';
 import Gallery from "react-photo-gallery";
 import Valere from "./../../assets/images/services/IMG_4433.jpg"
-import { Photos } from "./equipment";
+import { Photos, Thumbnails } from "./equipment";
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
 
@@ -29,13 +29,7 @@ export class Service extends Component<IServiceProps, IServiceState> {
     this.openLightbox = this.openLightbox.bind(this);
     this.gotoNext = this.gotoNext.bind(this);
     this.gotoPrevious = this.gotoPrevious.bind(this);
-
-
-    //List services images
-
   }
-  //List of services
-
 
   openLightbox = (event: any, obj: any) => {
     this.setState({
@@ -83,7 +77,7 @@ export class Service extends Component<IServiceProps, IServiceState> {
 
         <div className="service-container equipment">
           <div>
-            <Gallery photos={Photos} onClick={this.openLightbox} />
+            <Gallery photos={Thumbnails} onClick={this.openLightbox} />
             {this.state.lightboxIsOpen && <Lightbox
               onCloseRequest={this.closeLightbox}
               onMovePrevRequest={this.gotoPrevious}
