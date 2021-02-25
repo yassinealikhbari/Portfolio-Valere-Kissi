@@ -58,7 +58,6 @@ export class Service extends Component<IServiceProps, IServiceState> {
   }
 
   public render(): React.ReactElement<IServiceProps> {
-    console.log("Valere", Valere);
     return (
       <div>
         <div className="service-container">

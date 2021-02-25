@@ -2,6 +2,8 @@ import React from 'react';
 import './Menu.css';
 import { Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import $ from 'jquery';
+import { isMobile } from 'react-device-detect';
 
 export interface IMenuProps {
 }
@@ -22,7 +24,9 @@ export class Menu extends React.Component<IMenuProps, IMenuState> {
         const { activeKey } = this.state;
 
         const handleClick = (selected: any) => {
-            this.setState({ activeKey: selected })
+            this.setState({ activeKey: selected }, () => {
+                if (isMobile) $(".navbar-toggler").trigger("click");
+            });
         }
 
         return (
