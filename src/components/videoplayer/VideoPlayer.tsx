@@ -16,7 +16,7 @@ export class VideoPlayer extends React.Component<IVideoPlayerProps, IVideoPlayer
   public render() {
     return (
       <div className="responsive-container">
-        <div className="embed-responsive embed-responsive-21by9">
+        <div className="embed-responsive embed-responsive-16by9">
           <iframe title={`www.youtube.com/${this.props.youtubeId}`} className="custom-iframes"
             src={`https://www.youtube.com/embed/${this.props.youtubeId}?wmode=transparent&autoplay=1&mute=1&theme=dark&controls=1&autohide=1&loop=1&showinfo=0&enablejsapi=0&rel=0&vq=hd1440`}
             frameBorder="0"
