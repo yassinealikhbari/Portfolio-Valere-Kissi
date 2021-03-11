@@ -24,7 +24,7 @@ export class Footer extends React.Component<IFooterProps, IFooterState> {
         return (
             <div className="vk-flex-container bg-blk">
                 <div id="vk-footer">
-                    <a href="https://www.instagram.com/valere_4ever_young/" target="_blank" rel="noreferrer" id="ig-link">
+                    <a href="https://www.instagram.com/valerekissi_cinematographer/" target="_blank" rel="noreferrer" id="ig-link">
                         <FontAwesome
                             name='instagram'
                             style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)', margin: '0 20px', fontSize: '18px' }}
