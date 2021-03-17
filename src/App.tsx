@@ -1,13 +1,14 @@
-import './App.css';
-import { Header } from './components/header/Header';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { Showreels } from './components/showreels/Showreels';
-import { Videos } from './components/videos/Videos';
-import { Photos } from './components/photos/Photos';
-import { Service } from './components/service/Service';
-import { Contacts } from './components/contacts/Contacts';
-import { Footer } from './components/footer/Footer';
-import { NotFound } from './components/notfound/NotFound';
+import "./App.css";
+import { Header } from "./components/header/Header";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Showreels } from "./components/showreels/Showreels";
+import { Videos } from "./components/videos/Videos";
+import { Player } from "./components/videos/Player";
+import { Photos } from "./components/photos/Photos";
+import { Service } from "./components/service/Service";
+import { Contacts } from "./components/contacts/Contacts";
+import { Footer } from "./components/footer/Footer";
+import { NotFound } from "./components/notfound/NotFound";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route exact path="/" component={Showreels} />
             <Route exact path="/home" component={Showreels} />
             <Route exact path="/videos" component={Videos} />
+            <Route exact path="/player" component={Player} />
             <Route exact path="/photos" component={Photos} />
             <Route exact path="/service" component={Service} />
             <Route exact path="/contact" component={Contacts} />
