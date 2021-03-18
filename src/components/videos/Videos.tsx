@@ -60,9 +60,9 @@ export class Videos extends React.Component<IVideosProps, IVideosState> {
             />
           </Link>
 
-          <Link className="videos-item" to="player?videoId=3AUPVK9KeJc">
+          <Link className="videos-item" to="player?videoId=R7lVdnZofRg">
             <img
-              alt="ERASMUS 2019/2020 Interview N°1 by Valere Kissi"
+              alt="JENNY: BMPCC 4K - SIGMA 18-35mm NIGHT VIDEO TEST"
               src={require("./../../assets/images/videos/video4.png")?.default}
             />
           </Link>
